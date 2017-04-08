@@ -1,0 +1,1 @@
+// your js logic for renderer process

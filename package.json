@@ -1,0 +1,54 @@
+{
+  "name": "telectron",
+  "productName": "telectron",
+  "version": "0.0.1",
+  "description": "Telegram desktop client",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akashnimare/telectron"
+  },
+  "author": {
+    "name": "akashnimare",
+    "email": "svnitakash@gmail.com",
+    "url": "http://akashnimare.in"
+  },
+  "bugs": {
+    "url": "https://github.com/akashnimare/telectron/issues"
+  },
+  "main": "app/main/index.js",
+  "scripts": {
+    "test": "gulp test && xo",
+    "start": "electron .",
+    "watch": "gulp dev",
+    "build:osx": "electron-packager . --out=dist --app-version=$npm_package_version --prune --asar --icon=app/resources/Icon.icns --overwrite --platform=darwin --arch=x64",
+    "build": "electron-packager . --out=dist --app-version=$npm_package_version --prune --asar --overwrite --all"
+  },
+  "keywords": [
+    "electron",
+    "electron-app",
+    "telegram"
+  ],
+  "dependencies": {
+    "configstore": "3.0.0",
+    "electron-context-menu": "0.8.0",
+    "electron-debug": "1.1.0"
+  },
+  "devDependencies": {
+    "devtron": "^1.1.0",
+    "electron": "1.6.2",
+    "electron-connect": "^0.4.6",
+    "electron-packager": "^7.0.0",
+    "gulp": "^3.9.1",
+    "xo": "*",
+    "gulp-mocha": "^3.0.1",
+    "spectron": "^3.3.0"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}

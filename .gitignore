@@ -1,0 +1,8 @@
+node_modules
+npm-debug.log
+dist
+config.gypi
+
+// osx garbage
+*.DS_Store
+.DS_Store
