@@ -28,4 +28,4 @@ $ npm run build
 
 ## License
 
-MIT © [Yourname](https://yourwebsite.com)
+MIT © [Akashnimare](http://akashnimare.in)
