@@ -2,11 +2,11 @@ const assert = require('assert')
 const Application = require('spectron').Application
 
 describe('application launch', function () {
-  this.timeout(10000)
+  this.timeout(15000)
 
   beforeEach(function () {
     this.app = new Application({
-      path: __dirname + '/../node_modules/.bin/electron',
+      path: require('electron'),
       args: [__dirname + '/../app/main/index.js']
     })
     return this.app.start()

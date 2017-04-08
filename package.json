@@ -16,20 +16,28 @@
   "bugs": {
     "url": "https://github.com/akashnimare/telectron/issues"
   },
-  "main": "app/main/index.js",
   "keywords": [
     "electron",
     "electron-app",
     "telegram"
   ],
+  "main": "app/main/index.js",
   "scripts": {
     "postinstall": "install-app-deps",
-    "start": "yarn install && electron ./app",
+    "start": "yarn install && electron ./app/main",
     "pack": "build --dir",
-    "dist": "build"
+    "dist": "build",
+    "build:win": "build --win nsis-web --ia32 --x64",
+    "travis": "cd ./scripts && ./travis-build-test.sh"
   },
   "build": {
     "appId": "org.akashnimare.telectron",
+    "asar": true,
+    "files": [
+      "**/*",
+      "!node_modules/@paulcbetts/cld/deps/cld${/*}"
+    ],
+    "copyright": "©2017 Akashnimare",
     "mac": {
       "category": "public.app-category.chat"
     },
@@ -52,6 +60,14 @@
         "AppImage",
         "deb"
       ]
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "perMachine": true,
+      "oneClick": false
     }
   },
   "dependencies": {
