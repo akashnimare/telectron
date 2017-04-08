@@ -17,18 +17,43 @@
     "url": "https://github.com/akashnimare/telectron/issues"
   },
   "main": "app/main/index.js",
-  "scripts": {
-    "test": "gulp test && xo",
-    "start": "electron .",
-    "watch": "gulp dev",
-    "build:osx": "electron-packager . --out=dist --app-version=$npm_package_version --prune --asar --icon=app/resources/Icon.icns --overwrite --platform=darwin --arch=x64",
-    "build": "electron-packager . --out=dist --app-version=$npm_package_version --prune --asar --overwrite --all"
-  },
   "keywords": [
     "electron",
     "electron-app",
     "telegram"
   ],
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "yarn install && electron ./app",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "org.akashnimare.telectron",
+    "mac": {
+      "category": "public.app-category.chat"
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
+  },
   "dependencies": {
     "configstore": "3.0.0",
     "electron-context-menu": "0.8.0",
@@ -38,7 +63,7 @@
     "devtron": "^1.1.0",
     "electron": "1.6.2",
     "electron-connect": "^0.4.6",
-    "electron-packager": "^7.0.0",
+    "electron-builder": "16.7.1",
     "gulp": "^3.9.1",
     "xo": "*",
     "gulp-mocha": "^3.0.1",
