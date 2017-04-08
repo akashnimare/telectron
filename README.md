@@ -1,6 +1,6 @@
-# My desktop app
+# Telectron
 
-> Awesome Electron app
+> Unofficial Telegram desktop client
 
 
 ## Dev
