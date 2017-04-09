@@ -80,7 +80,7 @@ const helpSubmenu = [
 	{
 		label: `${appName} Website`,
 		click() {
-			shell.openExternal('https://github.com/akashnimare/simple-electron-boilerplate');
+			shell.openExternal('https://github.com/akashnimare/telectron');
 		}
 	},
 	{
@@ -97,7 +97,7 @@ ${app.getName()} ${app.getVersion()}
 Electron ${process.versions.electron}
 ${process.platform} ${process.arch} ${os.release()}`;
 
-			shell.openExternal(`https://github.com/akashnimare/simple-electron-boilerplate/issues/new?body=${encodeURIComponent(body)}`);
+			shell.openExternal(`https://github.com/akashnimare/telectron/issues/new?body=${encodeURIComponent(body)}`);
 		}
 	}
 ];
