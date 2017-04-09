@@ -26,6 +26,8 @@
   "scripts": {
     "postinstall": "install-app-deps",
     "start": "electron ./app/main",
+    "test": "gulp test && xo",
+    "dev": "gulp dev",
     "pack": "build --dir",
     "dist": "build",
     "build:win": "build --win nsis-web --ia32 --x64",
@@ -60,7 +62,7 @@
   },
   "dependencies": {
     "configstore": "3.0.0",
-    "electron-spellchecker" : "1.0.6",
+    "electron-spellchecker": "1.0.6",
     "electron-debug": "1.1.0"
   },
   "devDependencies": {
@@ -73,11 +75,30 @@
     "gulp-mocha": "^3.0.1",
     "spectron": "^3.3.0"
   },
-  "xo": {
+ "xo": {
     "esnext": true,
+    "overrides": [
+      {
+        "files": "app/main/*.js",
+        "rules": {
+          "max-lines": [
+            "warn",
+            500
+          ],
+          "no-warning-comments": 0,
+          "no-else-return": 0,
+          "import/no-unresolved": 0,
+          "import/no-extraneous-dependencies": 0
+        }
+      }
+    ],
+    "ignore": [
+      "tests/*.js"
+    ],
     "envs": [
       "node",
-      "browser"
+      "browser",
+      "mocha"
     ]
   }
 }
