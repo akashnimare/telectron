@@ -4,6 +4,9 @@
 
 > Unofficial Telegram desktop client
 
+# Motivation
+No doubt Telegram's official desktop client is awesome but it lacks features like spellchecker, hide tray icon etc. The goal of this app is to add those missing features :rocket:
+
 ## Prerequisites
 * node >= v6.3.1
 > Use [nvm](https://github.com/creationix/nvm) to install the current stable version of node
