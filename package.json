@@ -25,7 +25,7 @@
   "main": "app/main/index.js",
   "scripts": {
     "postinstall": "install-app-deps",
-    "start": "yarn install && electron ./app/main",
+    "start": "electron ./app/main",
     "pack": "build --dir",
     "dist": "build",
     "build:win": "build --win nsis-web --ia32 --x64",
@@ -43,20 +43,6 @@
       "category": "public.app-category.chat",
       "identity": null
     },
-    "dmg": {
-      "contents": [
-        {
-          "x": 110,
-          "y": 150
-        },
-        {
-          "x": 240,
-          "y": 150,
-          "type": "link",
-          "path": "/Applications"
-        }
-      ]
-    },
     "linux": {
       "target": [
         "AppImage",
@@ -65,7 +51,7 @@
     },
     "win": {
       "target": "nsis",
-      "icon": "build/icion.ico"
+      "icon": "build/icon.ico"
     },
     "nsis": {
       "perMachine": true,

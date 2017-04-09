@@ -6,7 +6,7 @@
 	</head>
 	<body>
 	<div class="about">
-		<center><img src="../../build/telectron.png"></center>
+		<center><img src="../resources/telectron.png"></center>
 		<center><p class="detail"> Version : 0.0.1 </p>
 		<center><p class="detail"> License : MIT </p>
 		<center><p class="detail"> Maintainer : Akash Nimare </p>
@@ -15,11 +15,8 @@
 	<script>
 
 	function linkInBrowser(event) {
-
 		const shell = require('electron').shell;
-
 		const url = "https://github.com/akashnimare/telectron/issues/new?body=Please describe your issue and steps to reproduce it."
-
 		shell.openExternal(url);
 	}
 	</script>
