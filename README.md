@@ -1,4 +1,10 @@
-<img src="build/telectron.png" width="256" /> 
+<h1 align="center">
+  <br>
+  <img src="build/telectron.png" width="250">
+  <  <br>
+</h1>
+<br>
+
 # Telectron
 [![Build Status](https://travis-ci.org/akashnimare/telectron.svg?branch=master)](https://travis-ci.org/akashnimare/telectron)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
