@@ -1,10 +1,10 @@
 {
   "name": "telectron",
-  "productName": "telectron",
+  "productName": "Telectron",
   "version": "0.0.1",
   "description": "Telegram desktop client",
   "license": "MIT",
-  "repository": {
+  "repository":
     "type": "git",
     "url": "https://github.com/akashnimare/telectron"
   },
@@ -19,7 +19,8 @@
   "keywords": [
     "electron",
     "electron-app",
-    "telegram"
+    "telegram",
+    "messenger"
   ],
   "main": "app/main/index.js",
   "scripts": {
