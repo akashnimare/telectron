@@ -63,10 +63,10 @@ coming :soon:
 
 - [x] Native Notifications
 - [x] SpellChecker
-- []  Custom themes
-- []  OSX/Win/Linux installer
-- []  Automatic Updates (macOS/Windows)
-- []  Keyboard shortcuts
+- [ ]  Custom themes
+- [ ]  OSX/Win/Linux installer
+- [ ]  Automatic Updates (macOS/Windows)
+- [ ]  Keyboard shortcuts
 
 ## Contribute
 :raising_hand:
