@@ -2,6 +2,7 @@ node_modules
 npm-debug.log
 dist
 config.gypi
+yarn.lock
 
 // osx garbage
 *.DS_Store
