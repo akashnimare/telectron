@@ -1,7 +1,8 @@
 'use strict';
 const path = require('path');
+const fs = require('fs');
 const electron = require('electron');
-const {app} = require('electron');
+const { app } = require('electron');
 const ipc = require('electron').ipcMain;
 const Configstore = require('configstore');
 const tray = require('./tray');
@@ -112,5 +113,10 @@ app.on('ready', () => {
 	tray.create(mainWindow);
 
 	const page = mainWindow.webContents;
+
+	page.on('dom-ready', () => {
+		page.insertCSS(fs.readFileSync(path.join(__dirname, 'preload.css'), 'utf8'));
+		mainWindow.show();
+	});
 });
 
