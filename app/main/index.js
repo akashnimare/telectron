@@ -11,7 +11,6 @@ const appName = app.getName();
 
 // adds debug features like hotkeys for triggering dev tools and reload
 require('electron-debug')();
-require('electron-context-menu')();
 
 const conf = new Configstore('`${appName}`');
 

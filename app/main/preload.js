@@ -1,6 +1,8 @@
 'use strict';
 const ipcRenderer = require('electron').ipcRenderer;
 const webFrame = require('electron').webFrame;
+const {spellChecker} = require('./spellchecker');
+
 
 // Handle zooming functionality
 
@@ -29,4 +31,8 @@ ipcRenderer.on('zoomActualSize', () => {
 	zoomActualSize();
 });
 
-
+// To prevent failing this script on linux we need to load it after the document loaded
+document.addEventListener('DOMContentLoaded', () => {
+	// init spellchecker
+	spellChecker();
+});
