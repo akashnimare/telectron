@@ -56,14 +56,17 @@ It will start the packaging process for operating system you are running this co
 
 You can create Windows installer only when running on Windows, the same is true for Linux and OSX. So to generate all three installers you need all three operating systems.
 
+# Download
+coming :soon:
 
 ## Features
 
 - [x] Native Notifications
 - [x] SpellChecker
-- [] OSX/Win/Linux installer
-- [] Automatic Updates (macOS/Windows)
-- [] Keyboard shortcuts
+- []  Custom themes
+- []  OSX/Win/Linux installer
+- []  Automatic Updates (macOS/Windows)
+- []  Keyboard shortcuts
 
 ## Contribute
 :raising_hand:
