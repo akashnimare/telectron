@@ -14,7 +14,7 @@
 # Motivation
 No doubt Telegram's official desktop client is awesome but it lacks features like spellchecker, hide tray icon etc. The goal of this app is to add those missing features :rocket:
 
-## Prerequisites
+# Prerequisites
 * node >= v6.3.1
 > Use [nvm](https://github.com/creationix/nvm) to install the current stable version of node
 
@@ -26,7 +26,7 @@ $ sudo apt-get install build-essential libxext-dev libxtst-dev libxkbfile-dev
 ```
 
 
-## Installation
+# Installation
 
 Clone the source locally:
 
@@ -72,7 +72,7 @@ After the app is dragged to your Applications folder, you can run it normally â€
 ## Windows & Linux
 coming :soon:
 
-## Features
+# Features
 
 - [x] Native Notifications
 - [x] SpellChecker
@@ -81,15 +81,15 @@ coming :soon:
 - [ ]  Automatic Updates (macOS/Windows)
 - [ ]  Keyboard shortcuts
 
-## Contribute
+# Contribute
 :raising_hand:
 
 * [Issue Tracker](https://github.com/akashnimare/telectron/issues)
 * [Source Code](https://github.com/akashnimare/telectron/)
 
-## Related
+# Related
 [zulip-electron](https://github.com/zulip/zulip-electron)
 
-## License
+# License
 
 MIT Â© [Akashnimare](http://akashnimare.in)
