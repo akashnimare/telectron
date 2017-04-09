@@ -63,7 +63,7 @@ You can create Windows installer only when running on Windows, the same is true 
 - [] Keyboard shortcuts
 
 ## Contribute
-:pray:
+:raising_hand:
 
 * [Issue Tracker](https://github.com/akashnimare/telectron/issues)
 * [Source Code](https://github.com/akashnimare/telectron/)
