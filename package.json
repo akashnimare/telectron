@@ -39,7 +39,8 @@
     ],
     "copyright": "©2017 Akashnimare",
     "mac": {
-      "category": "public.app-category.chat"
+      "category": "public.app-category.chat",
+      "identity": null
     },
     "dmg": {
       "contents": [
@@ -63,7 +64,7 @@
     },
     "win": {
       "target": "nsis",
-      "icon": "build/icon.ico"
+      "icon": "build/icion.ico"
     },
     "nsis": {
       "perMachine": true,
