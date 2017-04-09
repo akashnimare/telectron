@@ -1,7 +1,7 @@
 <h1 align="center">
   <br>
   <img src="build/telectron.png" width="250">
-  <  <br>
+  <br>
 </h1>
 <br>
 
