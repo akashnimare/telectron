@@ -22,7 +22,7 @@ exports.create = () => {
 	};
 	const contextMenu = electron.Menu.buildFromTemplate([
 		{
-			label: 'toggel',
+			label: 'Toggel',
 			click() {
 				toggleWin();
 			}
